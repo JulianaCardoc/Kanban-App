@@ -3,11 +3,12 @@ import { BackgroundComponent } from '../../components/background/background.comp
 import { HeaderComponent } from '../../components/header/header.component';
 import { RecoveryFormComponent } from '../../components/recovery-form/recovery-form.component';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-recovery',
   standalone: true,
-  imports: [BackgroundComponent, HeaderComponent, RecoveryFormComponent, FooterComponent],
+  imports: [BackgroundComponent, HeaderComponent, RecoveryFormComponent, FooterComponent, RouterLink],
   templateUrl: './recovery.component.html',
   styleUrl: './recovery.component.scss'
 })

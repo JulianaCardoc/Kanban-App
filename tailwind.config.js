@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         success: colors.green,
-        primary: colors.blue,
+        primary: colors.indigo,
         danger: colors.red,
         light: colors.gray,
         sky: colors.sky,

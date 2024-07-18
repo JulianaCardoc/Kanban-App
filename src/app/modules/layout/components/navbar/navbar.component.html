@@ -1,24 +1,24 @@
-<nav class="bg-sky-700 border-gray-200 px-6 shadow-md">
+<nav class="bg-primary-500 border-gray-200 px-6 shadow-md">
   <div class="flex flex-wrap justify-between items-center">
     <div class="flex items-center">
       <a routerLink="">
         <img
           loading="lazy"
-          class="w-20 mr-8"
-          src="/assets/images/logo/logo-gradient-white-trello.png"
+          class="w-28 mr-8"
+          src="/assets/images/logo/my-kanban-logo.png"
           alt="logo-gradient-white-trello"
         />
       </a>
       <div class="flex items-center">
         <ul class="flex items-center space-x-8 text-sm font-medium">
           <li>
-            <a class="block py-3 px-4 text-white"> Workspaces </a>
+            <a routerLink="/boards" class="block py-3 px-4 text-white"> Workspaces </a>
           </li>
           <li>
-            <a class="block py-3 px-4 text-white"> Recent </a>
+            <a routerLink="/board" class="block py-3 px-4 text-white"> Recent </a>
           </li>
           <li>
-            <app-btn typeBtn="button" [color]="'sky'">Create</app-btn>
+            <app-btn typeBtn="button" [color]="'primary'">Create</app-btn>
           </li>
         </ul>
       </div>
@@ -40,7 +40,7 @@
       >
         <img
           class="w-8 h-8 rounded-full"
-          src="https://pymstatic.com/5844/conversions/personas-emocionales-small-16_9.jpg"
+          src="https://img.freepik.com/foto-gratis/mujer-hermosa-joven-mirando-camara-chica-moda-verano-casual-camiseta-blanca-pantalones-cortos-hembra-positiva-muestra-emociones-faciales-modelo-divertido-aislado-amarillo_158538-15796.jpg?t=st=1721338147~exp=1721341747~hmac=a0c2ddeb82d8b0e3029240d9c4bf0f257b0a895aeee5a083ffbdf990ff8cc96c&w=826"
           alt="user photo"
         />
       </button>
@@ -81,18 +81,18 @@
     <div class="py-3 px-4 flex items-center space-x-4">
       <img
         class="w-10 h-10 rounded-full"
-        src="https://api.lorem.space/image/face?w=400&h=400"
+        src="https://img.freepik.com/foto-gratis/mujer-hermosa-joven-mirando-camara-chica-moda-verano-casual-camiseta-blanca-pantalones-cortos-hembra-positiva-muestra-emociones-faciales-modelo-divertido-aislado-amarillo_158538-15796.jpg?t=st=1721338147~exp=1721341747~hmac=a0c2ddeb82d8b0e3029240d9c4bf0f257b0a895aeee5a083ffbdf990ff8cc96c&w=826"
         alt=""
       />
       <div class="space-y-1">
         <div>Jese Leos</div>
-        <div class="text-sm text-gray-500">nicogmail.com</div>
+        <div class="text-sm text-gray-500">nico&#64;gmail.com</div>
       </div>
     </div>
     <ul class="py-1">
       <li>
         <a
-          href="#"
+          routerLink="/profile"
           class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600"
           >Profile</a
         >
@@ -118,17 +118,10 @@
           >Settings</a
         >
       </li>
-      <li>
-        <a
-          href="#"
-          class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600"
-          >Sign out</a
-        >
-      </li>
     </ul>
     <ul class="py-1">
       <li>
-        <a href="#" class="block py-2 px-4 text-sm text-gray-700">Log out</a>
+        <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600">Log out</a>
       </li>
     </ul>
   </div>

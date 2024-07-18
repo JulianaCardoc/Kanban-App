@@ -10,11 +10,12 @@ import { Column, ToDo } from '../../../models/todo.model';
 import { CommonModule } from '@angular/common';
 import { Dialog, DialogModule } from '@angular/cdk/dialog'
 import { TodoDialogComponent } from '../components/todo-dialog/todo-dialog.component';
+import { BtnComponent } from '../../components/btn/btn.component';
 
 @Component({
   selector: 'app-board',
   standalone: true,
-  imports: [DragDropModule, NavbarComponent, CommonModule, DialogModule],
+  imports: [DragDropModule, NavbarComponent, CommonModule, DialogModule, BtnComponent],
   templateUrl: './board.component.html',
   styleUrl: './board.component.scss',
 })

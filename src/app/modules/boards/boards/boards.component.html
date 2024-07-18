@@ -2,7 +2,7 @@
   <div class="w-1/5 mr-4">
     <ul class="flex flex-col font-medium text-gray-700 mb-10">
       <li>
-        <a class="block bg-sky-100 rounded py-1 px-3 text-sky-700"
+        <a routerLink="/boards" class="block bg-sky-100 rounded py-1 px-3 text-sky-700"
           ><fa-icon [icon]="faTrello"></fa-icon> Boards</a
         >
       </li>
@@ -38,9 +38,9 @@
           >
             <ul class="ml-2 flex flex-col text-sm text-gray-700">
               <li>
-                <a class="block py-1 px-3"
+                <a routerLink="/boards" class="block py-1 px-3"
                   ><fa-icon [icon]="faTrello"></fa-icon> Boards</a
-                >
+                > 
               </li>
               <li>
                 <a class="block py-1 px-3"
@@ -68,43 +68,40 @@
       </cdk-accordion-item>
     </cdk-accordion>
 
-    <cdk-accordion>
-      <cdk-accordion-item #accordionItem="cdkAccordionItem" *ngFor="let item of items">
-        <button class="w-full text-left" type="button" (click)="accordionItem.toggle()">{{ item.label }}</button>
-        <div [style.display]="accordionItem.expanded ? '' : 'none' ">
-          <ul>
-            <li *ngFor="let subItem of item.items">{{ subItem.label }}</li>
-          </ul>
-        </div>
-      </cdk-accordion-item>
-    </cdk-accordion>
-
   </div>
   <div class="w-full">
     <h1 class="text-lg font-bold mb-4">
       <fa-icon [icon]="faClock"></fa-icon> Recently viewed
     </h1>
     <div class="grid grid-cols-4 gap-4">
-      <div
-        class="w-full bg-sky-700 px-4 py-2 rounded text-white font-bold h-24"
+      <a routerLink="/board">
+        <div
+        class="w-full bg-blue-300 px-4 py-2 rounded text-white font-bold h-24"
       >
         Board 1
       </div>
-      <div
-        class="w-full bg-green-700 px-4 py-2 rounded text-white font-bold h-24"
+      </a>
+      <a routerLink="/board">
+        <div
+        class="w-full bg-rose-300 px-4 py-2 rounded text-white font-bold h-24"
       >
         Board 1
       </div>
-      <div
-        class="w-full bg-amber-700 px-4 py-2 rounded text-white font-bold h-24"
+      </a>
+      <a routerLink="/board">
+        <div
+        class="w-full bg-emerald-300 px-4 py-2 rounded text-white font-bold h-24"
       >
         Board 1
       </div>
-      <div
-        class="w-full bg-indigo-700 px-4 py-2 rounded text-white font-bold h-24"
+      </a>
+      <a routerLink="/board">
+        <div
+        class="w-full bg-purple-300 px-4 py-2 rounded text-white font-bold h-24"
       >
         Board 1
       </div>
+      </a>
     </div>
   </div>
 </div>

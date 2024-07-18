@@ -22,7 +22,7 @@ export class BtnComponent {
       'text-white': true,
     },
     primary: {
-      'bg-primary-700': true,
+      'bg-primary-500': true,
       'hover:bg-primary-800': true,
       'focus:ring-primary-300': true,
       'text-white': true,
@@ -41,7 +41,7 @@ export class BtnComponent {
     },
     light: {
       'bg-gray-200': true,
-      'hover:bg-gray-500': true,
+      'hover:bg-gray-400': true,
       'focus:ring-gray-50': true,
       'text-gray-700': true,
     },

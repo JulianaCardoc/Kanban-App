@@ -1,27 +1,97 @@
-# Kanban
+# My Kanban App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
+## Table of Contents
+1. [Project Description](#project-description)
+2. [Project Context](#project-context)
+3. [Technologies Used](#technologies-used)
+4. [Features](#features)
+5. [Future Enhancements](#future-enhancements)
+6. [Prerequisites](#prerequisites)
+7. [Installation](#installation)
+8. [Usage](#usage)
+9. [Project Structure](#project-structure)
+10. [Contributing](#contributing)
+11. [License](#license)
+12. [Contact Information](#contact-information)
 
-## Development server
+## Project Description
+Kanban Board App is an application that allows users to create boards following the Kanban methodology. It provides the functionality to sort tasks (represented by cards) in priority order and classify them by status (represented by columns).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Project Context
+This application is developed as a technical assessment for a trainee opportunity as a Full Stack Developer, focusing on Angular, Node.js, and related technologies. It serves as an MVP (Minimum Viable Product) of a larger potential project. While it currently offers basic functions and an authentication layer, it has the potential to evolve into a comprehensive project management and tracking tool.
 
-## Code scaffolding
+## Technologies Used
+- Node.js environment
+- Angular (Front-end framework)
+- Tailwind CSS (Styling tool)
+- Angular CDK (Component Development Kit)
+- Angular Reactive Forms
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
+- User Authentication (Login functionality)
+- Creation of Kanban boards
+- Addition and management of tasks as cards
+- Organization of cards into columns representing different statuses
+- Drag and drop functionality for easy task management
+- Priority sorting for tasks
 
-## Build
+## Future Enhancements
+While the current version demonstrates core functionalities, there are several areas for potential improvement:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Implementation of a robust data persistence method
+- Integration with a dedicated backend API for enhanced data management
+- Expansion of user management features
+- Addition of collaborative features for team projects
+- Implementation of advanced analytics and reporting tools
 
-## Running unit tests
+Please note that the current version utilizes available APIs for testing purposes. Future iterations will focus on developing a custom backend solution for improved functionality and data management.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Prerequisites
+To run this project, you need to have the following installed on your system:
+- Node.js (latest LTS version recommended)
+- npm (Node Package Manager, comes with Node.js)
+- Angular CLI
 
-## Running end-to-end tests
+## Installation
+1. Clone the repository to your local machine
+2. Navigate to the project directory in your terminal
+3. Run `npm install` to install all dependencies
+4. Once the installation is complete, you're ready to run the application
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Usage
+To start the application:
 
-## Further help
+1. In the project directory, run `ng serve`
+2. Open your browser and navigate to `http://localhost:4200`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+For testing purposes, you can use the following credentials:
+- Email: nicolas@mail.com
+- Password: changeme
+
+## Project Structure
+The project follows a standard Angular application structure:
+
+- `src/`: Contains the source code of the application
+  - `app/`: Main application folder
+    - `components/`: Angular components
+    - `services/`: Angular services
+    - `models/`: Data models and interfaces
+  - `assets/`: Static assets like images
+  - `environments/`: Environment-specific configuration files
+- `node_modules/`: Third-party dependencies
+- `angular.json`: Angular configuration file
+- `package.json`: Node.js dependencies and scripts
+
+## Contributing
+As this is a technical assessment project, contributions are not currently being accepted. However, feedback and suggestions are always welcome. Please feel free to reach out to the developer with any ideas or questions.
+
+## License
+This project is public licensed for learning and testing purposes.
+
+## Contact Information
+For any inquiries about this project, please contact the developer:
+
+Email: julicardoc@gmail.com
+
+## Acknowledgments
+This project was developed as part of a technical assessment, applying the knowledge and skills acquired through the teachings of the BIT (Bogotá Institute of Technology) from Colombia. Special thanks to the instructors and mentors at BIT for their guidance and support throughout the learning process.
